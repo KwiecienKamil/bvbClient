@@ -10,7 +10,7 @@ const SignInModal = (props) => {
   const register = () => {
     if (emailReg.length > 0 && passwordReg > 0) {
       axios
-        .post("http://localhost:5000/register", {
+        .post("https://bvbfans-46462e8580ae.herokuapp.com/register", {
           email: emailReg,
           password: passwordReg,
         })

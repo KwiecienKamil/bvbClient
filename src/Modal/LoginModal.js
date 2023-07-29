@@ -12,7 +12,7 @@ const LoginModal = (props) => {
 
   const login = (props) => {
     axios
-      .post("http://localhost:5000/login", {
+      .post("https://bvbfans-46462e8580ae.herokuapp.com/login", {
         email: emailLog,
         password: passwordLog,
       })
@@ -21,8 +21,6 @@ const LoginModal = (props) => {
           setLoginMessage(response.data.message);
           setLoggedIn("");
         } else {
-          setLoggedInEmail(response.data[0].email);
-          setLoginStatus(true);
           setLoginMessage("");
           setLoggedIn("Signed In!");
           setEmailLog("");
