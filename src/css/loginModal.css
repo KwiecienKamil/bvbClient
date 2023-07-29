@@ -1,0 +1,84 @@
+.modal-container {
+    font-family: 'Rubik', sans-serif;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    height: 250px;
+    width: 24%;
+    background: black;
+    color: white;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.modal-container input {
+    height: 2rem;
+    width: 250px;
+    padding: 0px 10px;
+    font-size: 1rem;
+}
+.modal-container label {
+    font-weight: 600;
+}
+.username-container, .password-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+}
+.modal-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.log-in, .sign-in {
+    margin-top: 10px;
+    padding: 10px 0;
+    width: 250px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #fde100;
+}
+.question a {
+    text-decoration: underline;
+    cursor: pointer;
+    padding-left: 5px;
+}
+.login-info {
+    padding-top: 5px;
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+.login-success {
+    color: rgb(14, 121, 14);
+    display: flex;
+    justify-content: center;
+}
+@media all and (max-width:1024px) {
+    .modal-container{
+        width: 35%;
+    }
+}
+@media all and (max-width:750px) {
+    .modal-container{
+        min-width: 50%;
+    }
+}
+@media all and (max-width:750px) {
+    .modal-container{
+        min-width: 90%;
+        height: 210px;
+    }
+}
+@media all and (max-width:450px) {
+    .modal-container{
+        min-width: 77%;
+    }
+}
