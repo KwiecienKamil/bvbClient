@@ -12,21 +12,21 @@ const LoginModal = (props) => {
 
   const login = (props) => {
     axios
-      .post("https://bvbfans-46462e8580ae.herokuapp.com/login", {
-        email: emailLog,
-        password: passwordLog,
-      })
-      .then((response) => {
-        if (response.data.message) {
-          setLoginMessage(response.data.message);
-          setLoggedIn("");
-        } else {
-          setLoginMessage("");
-          setLoggedIn("Signed In!");
-          setEmailLog("");
-          setPasswordLog("");
-          window.location.reload();
-        }
+    .post("https://bvbfans-46462e8580ae.herokuapp.com/login", {
+      email: emailLog,
+      password: passwordLog,
+    })
+    .then((response) => {
+      if (response.data.message) {
+        setLoginMessage(response.data.message);
+        setLoggedIn("");
+      } else {
+        setLoginMessage("");
+        setLoggedIn("Signed In!");
+        setEmailLog("");
+        setPasswordLog("");
+        window.location.reload();
+      }
       });
   };
   return ReactDOM.createPortal(
