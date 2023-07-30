@@ -7,7 +7,7 @@ const Players = () => {
   const [backendData, setBackendData] = useState([]);
 
   useEffect(() => {
-    axios.get("https://bvbfans-46462e8580ae.herokuapp.com/players").then((request) => {
+    axios.get("https://bvb-backend.onrender.com/players").then((request) => {
       setBackendData(request.data);
       console.log(backendData);
     });

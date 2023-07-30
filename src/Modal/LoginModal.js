@@ -12,7 +12,7 @@ const LoginModal = (props) => {
 
   const login = (props) => {
     axios
-    .post("https://bvbfans-46462e8580ae.herokuapp.com/login", {
+    .post("https://bvb-backend.onrender.com/login", {
       email: emailLog,
       password: passwordLog,
     })

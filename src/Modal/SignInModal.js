@@ -10,7 +10,7 @@ const SignInModal = (props) => {
   const register = () => {
     if (emailReg.length > 0 && passwordReg > 0) {
       axios
-        .post("https://bvbfans-46462e8580ae.herokuapp.com/register", {
+        .post("https://bvb-backend.onrender.com/register", {
           email: emailReg,
           password: passwordReg,
         })
