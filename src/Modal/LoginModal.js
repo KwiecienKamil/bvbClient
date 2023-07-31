@@ -17,15 +17,15 @@ const LoginModal = (props) => {
       password: passwordLog,
     })
     .then((response) => {
-      console.log(response)
-      if (response.data.message) {
-        setLoginMessage(response.data.message);
-        setLoggedIn("");
-      } else {
+      console.log(response.data)
+      if (response.data.email === emailLog) {
         setLoginMessage("");
         setLoggedIn("Signed In!");
         setEmailLog("");
         setPasswordLog("");
+      } else {
+        setLoginMessage(response.data.message);
+        setLoggedIn("");
       }
       });
   };
