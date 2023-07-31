@@ -26,6 +26,7 @@ const LoginModal = (props) => {
         setLoggedIn("Signed In!");
         setEmailLog("");
         setPasswordLog("");
+        window.location.reload();
       }
       });
   };

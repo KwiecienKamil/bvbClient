@@ -14,11 +14,9 @@ const SignInModal = (props) => {
           email: emailReg,
           password: passwordReg,
         })
-        .then((response) => {
-          console.log(response);
-        });
       setEmailReg("");
       setPasswordReg("");
+      window.location.reload();
     } else {
       alert("Email/password can't be empty!");
     }
