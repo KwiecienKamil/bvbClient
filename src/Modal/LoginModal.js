@@ -22,7 +22,7 @@ const LoginModal = (props) => {
         setLoggedIn("");
       } else {
         setLoginMessage("");
-        setLoggedIn("Signed In!");
+        setLoggedIn("Logged In!");
         setEmailLog("");
         setPasswordLog("");
         window.location.reload();
@@ -58,7 +58,7 @@ const LoginModal = (props) => {
       </div>
       <div className="question">
         <p>
-          Don't have account? <a onClick={props.onShowSignIn}>Sign in</a>
+          Don't have account? <a onClick={props.onShowSignIn}>Sign up</a>
         </p>
         <p className="login-info">{loginMessage}</p>
         <p className="login-success">{LoggedIn}</p>

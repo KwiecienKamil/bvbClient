@@ -16,7 +16,7 @@ const SignInModal = (props) => {
         })
       setEmailReg("");
       setPasswordReg("");
-      alert('Succesfully signed in')
+      alert('Succesfully signed up')
     } else {
       alert("Email/password can't be empty!");
     }
@@ -46,7 +46,7 @@ const SignInModal = (props) => {
       </div>
       <div className="modal-button">
         <button type="submit" className="sign-in" onClick={register}>
-          SIGN IN
+          SIGN UP
         </button>
       </div>
       <div className="question">
