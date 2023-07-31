@@ -16,7 +16,6 @@ const SignInModal = (props) => {
         })
       setEmailReg("");
       setPasswordReg("");
-      window.location.reload();
     } else {
       alert("Email/password can't be empty!");
     }
