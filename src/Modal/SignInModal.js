@@ -8,21 +8,17 @@ const SignInModal = (props) => {
   const [passwordReg, setPasswordReg] = useState("");
 
   const register = () => {
-    if (emailReg.length > 0 && passwordReg > 0) {
-      axios
-        .post("https://bvb-backend.onrender.com/register", {
-          email: emailReg,
-          password: passwordReg,
-        })
-        .then((response) => {
-          console.log(response);
-        });
-      setEmailReg("");
-      setPasswordReg("");
-      window.location.reload();
-    } else {
-      alert("Email/password can't be empty!");
-    }
+    axios
+      .post("https://bvb-backend.onrender.com/register", {
+        email: emailReg,
+        password: passwordReg,
+      })
+      .then((response) => {
+        console.log(response);
+      });
+    setEmailReg("");
+    setPasswordReg("");
+    window.location.reload();
   };
 
   return ReactDOM.createPortal(
