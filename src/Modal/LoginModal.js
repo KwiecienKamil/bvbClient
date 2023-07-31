@@ -17,7 +17,6 @@ const LoginModal = (props) => {
       password: passwordLog,
     })
     .then((response) => {
-      console.log(response)
       if (response.data.message) {
         setLoginMessage(response.data.message);
         setLoggedIn("");
@@ -26,6 +25,7 @@ const LoginModal = (props) => {
         setLoggedIn("Signed In!");
         setEmailLog("");
         setPasswordLog("");
+        window.location.reload();
       }
       });
   };
