@@ -30,7 +30,10 @@
     transition: .5s ease;
     cursor: pointer;
 }
-.navbar-container a:hover, .navbar-container a.active {
+.navbar-container a:hover {
+    background-color: #d1bb1a;
+}
+.navbar-container a.active {
     background-color: #e2cd27;
 }
 @media all and (max-width: 1300px) {
