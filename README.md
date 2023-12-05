@@ -1,5 +1,5 @@
 #BVB FANS WEBSITE
-# React Express.js Node.js Mysql Heroku Render.com 
+# React Express.js Mysql Heroku Render.com 
 What I've learned:
 - Heroku and MysqlWorkbench connection hosted on Render.com
 - Signup/Login authentication with Express.js
